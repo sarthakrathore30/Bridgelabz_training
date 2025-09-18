@@ -8,5 +8,7 @@ public class BMIForTeam2D {
     for(int i=0;i<number;i++){ double w=in.nextDouble(); double h=in.nextDouble(); personData[i][0]=w; personData[i][1]=h; double hm=h/100.0; personData[i][2]=w/(hm*hm); weightStatus[i]= personData[i][2]<=18.4?"Underweight": personData[i][2]<25?"Normal": personData[i][2]<40?"Overweight":"Obese"; }
     for(int i=0;i<number;i++) System.out.println(personData[i][0]+" "+personData[i][1]+" "+String.format("%.2f",personData[i][2])+" "+weightStatus[i]);
     in.close();
-  }
+  } 
+  
 }
+
